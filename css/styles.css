@@ -1,0 +1,95 @@
+header h1{
+    color: var(--amarelo-light);
+    font-weight: 200;
+    font-size: 4em;
+}
+
+/* ------------- CARDS ---------------*/
+
+.cards-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.card-container{
+    width: 25%;
+    background-color: var(--branco);
+    padding: 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: var(--transition);
+}
+
+.card-container:hover{
+    margin-top: -3%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 40px 3px #999;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content span{
+    color: var(--cinza);
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.card-content h2{
+    color: var(--amarelo-light);
+    font-size: 2em;
+}
+
+/*  ------------- FRASES -------------- */
+
+.container-frases{
+    width: 100%;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-frases button{
+    width: 25%;
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+
+    font-size: 1.7em;
+    font-weight: 600;
+    background-color:  var(--amarelo);
+    color: var(--branco);
+    transition: var(--transition);
+}
+
+.container-frases button:hover{
+    background-color:  var(--branco);
+    color: var(--amarelo);
+    border-radius: 2rem;
+}
+
+.container-frases p{
+    text-align: center;
+    width: 75%;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 4%;
+    transition: 0.1s ease-in;
+}
+
+.container-frases p:hover{
+    opacity: 0.7;
+}

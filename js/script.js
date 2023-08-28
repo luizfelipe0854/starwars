@@ -31,13 +31,4 @@ function getData(param){
     return fetch(`https://swapi.dev/api/${param}`).then(res => res.json())
 }
 
-function carregarFrase(){
-    fetch('http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote')
-    .then(res => res.json())
-    .then(data =>{
-        frase.innerHTML = `"${data.content}"`;
-        btnFrases.innerHTML = 'Carregar nova frase!';
-    })
-    .catch(err => console.error('ERROR: ', err))
-}
 
